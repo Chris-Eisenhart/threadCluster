@@ -1,2 +1,2 @@
 all::
-	./makePostCountMatrix fileList.txt test.output
+	./makePostCountMatrix test.input test.output

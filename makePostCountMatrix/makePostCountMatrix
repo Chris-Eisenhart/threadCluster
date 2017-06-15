@@ -150,27 +150,28 @@ def main(args):
     Initialized options and calls other functions.
     """
     options = parseArgs(args)
+    firstLine = True
     vectorSpace = []
-    inputFiles = []
-    for line in options.inputFile: 
-        inputFiles.append(line.strip("\n"))
-        text = "".join(open(line.strip("\n"), "r").readlines()) 
-        rake = Rake()
-        keywords = rake.run(text)
-        for tup in keywords:
-            vectorSpace.append(tup[0])
-
-    VS = sorted(vectorSpace)
-    options.outputFile.write("\t".join(VS) + "\n")
-    for item in inputFiles:
+    VS = None
+    for line in options.inputFile:
+        if firstLine:
+            rake = Rake()
+            keywords = rake.run(line.strip("\n"))
+            for tup in keywords:
+                vectorSpace.append(tup[0])
+            VS = sorted(vectorSpace)
+            options.outputFile.write("\t".join(VS) + "\n")
+            firstLine = False
+            continue 
+        splitLine = line.strip("\n").split("\t")
         someList = []
         cnt = collections.Counter()
-        text = "".join(open(item, "r").readlines()).lower()
+        text = splitLine[2] 
         score = []
         for item2 in VS: 
             someList.append(text.count(item2))
             score.append(str(text.count(item2)))
-        options.outputFile.write(item + "\t" +  "\t".join(score) + "\n")
+        options.outputFile.write(splitLine[0] + "\t" +  "\t".join(score) + "\n")
 
 if __name__ == "__main__" : 
     sys.exit(main(sys.argv))
