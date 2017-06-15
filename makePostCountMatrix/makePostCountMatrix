@@ -141,9 +141,7 @@ class Rake():
         word_scores = calculate_word_scores(phrase_list)
 
         keyword_candidates = generate_candidate_keyword_scores(phrase_list, word_scores)
-
-        sorted_keywords = sorted(keyword_candidates.iteritems(), key=operator.itemgetter(1), reverse=True)
-        return sorted_keywords
+        return keyword_candidates
 
 def main(args):
     """
@@ -154,23 +152,25 @@ def main(args):
     vectorSpace = []
     VS = None
     for line in options.inputFile:
+        rake = Rake()
         if firstLine:
-            rake = Rake()
-            keywords = rake.run(line.strip("\n"))
-            for tup in keywords:
-                vectorSpace.append(tup[0])
+            keywords = rake.run(line.strip("\n").lower())
+            for name,val in keywords.iteritems():
+                vectorSpace.append(name)
             VS = sorted(vectorSpace)
-            options.outputFile.write("\t".join(VS) + "\n")
+            options.outputFile.write("#sigWordVector\t" + "\t".join(VS) + "\n")
             firstLine = False
             continue 
         splitLine = line.strip("\n").split("\t")
-        someList = []
         cnt = collections.Counter()
         text = splitLine[2] 
+        keywords = rake.run(text.strip("\n").lower())
         score = []
-        for item2 in VS: 
-            someList.append(text.count(item2))
-            score.append(str(text.count(item2)))
+        for item2 in VS:
+            if (keywords.get(item2)):  
+                score.append(str(keywords[item2]))
+            else:
+                score.append("0")
         options.outputFile.write(splitLine[0] + "\t" +  "\t".join(score) + "\n")
 
 if __name__ == "__main__" : 

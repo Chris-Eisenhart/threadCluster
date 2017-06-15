@@ -1,10 +1,10 @@
-#39	another person presents	anyone	audio	became	becomes reality	bioinformatics	check	clear	conferences	crikey	definitely check	department seminars	enough already	every conference	first one	fun	good though	hosting videoconferences regularly	idea	institution seminars	interested	join	lab meetings	listen	love	man	mean	monthly	mostly	next meeting	omgenomics	others make questions/comments/suggestions	participating	people interested	phd+postdoc seminars	post gets	present something	public seminars	re	reading papers	really become reality	replies	show slides	someone talks	something	sounds	special invited talks	support	talk	thank	thing	think	ve	video part	well	well executed	without actually	work	youtube
-t3_6gzrzu	2	1	0	1	0	0	0	0	0	1	0	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0	0	1	1	1	0	1	0	0	0	0	0	0	5	0	0	0	1	1	1	0	0	0	2	0	1	1	2	1	0	0	0	0	0
-t1_diuhybz	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-t1_dium7gi	2	0	0	0	0	0	0	0	0	1	1	0	0	1	0	0	0	0	0	0	1	0	0	1	0	0	1	1	0	0	0	0	0	0	0	1	0	0	1	4	1	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	1	1	0
-t1_diudfjd	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-t1_diudh1i	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	4	0	1	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
-t1_div9fbn	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-t1_diuh2ud	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0
-t1_diuyonh	1	0	0	0	0	0	0	1	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	1	1	0	0	0
-t1_divdg8a	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	1	0	4	0	0	0	0	0	1	0	0	0	0	0	1	1	0	0	0	0	0	0	0
+#sigWordVector	#39	another person presents	anyone	audio	became	becomes reality	bioinformatics	check	clear	conferences	crikey	definitely check	department seminars	enough already	every conference	first one	fun	good though	hosting videoconferences regularly	idea	institution seminars	interested	join	lab meetings	listen	love	man	mean	monthly	mostly	next meeting	omgenomics	others make questions/comments/suggestions	participating	people interested	phd+postdoc seminars	post gets	present something	public seminars	re	reading papers	really become reality	replies	show slides	someone talks	something	sounds	special invited talks	support	talk	thank	thing	think	ve	video part	well	well executed	without actually	work	youtube
+t3_6gzrzu	0	9.0	0	1.0	0	0	1.0	0	0	0	0	0	0	0	4.0	0	0	0	9.0	0	0	0	0	0	0	0	0	0	1.0	1.0	4.0	0	9.0	0	0	0	0	0	0	1.0	0	0	0	4.0	4.0	1.0	0	0	0	1.0	0	0	1.0	1.0	4.0	0	0	0	0	0
+t1_diuhybz	0	0	0	0	0	0	0	1.0	0	0	0	0	0	0	0	0	0	4.0	0	0	0	0	0	0	0	0	0	0	0	0	0	1.0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1.0
+t1_dium7gi	0	0	0	0	0	0	0	0	0	1.0	1.0	0	4.0	4.0	0	0	0	0	0	0	4.0	0	0	4.0	0	0	1.0	1.0	0	0	0	0	0	0	0	4.0	0	0	4.0	0	4.0	0	0	0	0	0	0	9.0	0	0	0	0	0	0	0	0	0	4.0	1.0	0
+t1_diudfjd	0	0	0	0	0	4.0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1.0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+t1_diudh1i	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1.0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4.0	0	0	0	0	9.0	1.0	0	0	0	0	0	1.0	0	1.0	0	0	0	0	0	0	0	0	0
+t1_div9fbn	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1.0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+t1_diuh2ud	0	0	0	0	1.0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1.0	1.0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1.0	0	0	0	0	0	0	0	0
+t1_diuyonh	0	0	0	0	0	0	0	0	0	0	0	4.0	0	0	0	0	1.0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1.0	0	0	0	0	0	0	0	0	0	4.0	0	0	0
+t1_divdg8a	0	0	1.0	0	0	0	0	0	1.0	0	0	0	0	0	0	4.0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1.0	4.0	0	0	4.0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1.0	0	0	1.0	0	0	0	0
