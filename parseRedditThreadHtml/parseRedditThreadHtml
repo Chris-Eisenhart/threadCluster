@@ -58,7 +58,7 @@ def main(args):
                             authorTag = nameVal.split("=")[1].strip("\"")
             inMultiLineComment = True 
     options.outputFile.write(fullThreadText) 
-    options.outputFile.write("\n#\n") 
+    options.outputFile.write("\n") 
     for item in postInfo: 
         options.outputFile.write(item[0] + "\t" + item[1] + "\t" + item[2] + "\n")
 
