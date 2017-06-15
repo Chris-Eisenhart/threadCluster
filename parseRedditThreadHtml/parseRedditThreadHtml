@@ -1,0 +1,67 @@
+#!/usr/bin/env python2.7
+# parseRedditThreadHtml
+"""Go through the html file and pull out the information needed"""
+import os
+import sys
+import collections
+import argparse
+
+def parseArgs(args):
+    """
+    Parse the command line arguments.
+    """
+    parser= argparse.ArgumentParser(description = __doc__)
+    parser.add_argument ("inputFile",
+    help = " The input file. ",
+    type = argparse.FileType("r"))
+    parser.add_argument ("outputFile",
+    help = " The output file. ",
+    type =argparse.FileType("w"))
+    if (len(sys.argv) == 1):
+        parser.print_help()
+        exit(1)
+    options = parser.parse_args()
+    return options
+
+def main(args):
+    """
+    Initialized options and calls other functions.
+    """
+    options = parseArgs(args)
+    inMultiLineComment = False 
+    fullPostText = ""
+    fullThreadText = ""
+    idTag = ""
+    authorTag = ""
+    postInfo = []
+    for line in options.inputFile: 
+        if inMultiLineComment: 
+            if line.startswith("</div>"): # End of the comment, flush time
+                fullThreadText += fullPostText + ". " # Add a period between comments so they are evaluated separately
+                postInfo.append((idTag, authorTag, fullPostText))
+                fullPostText = "" 
+                inMultiLineComment = False
+                continue 
+            else: 
+                fullPostText += line.strip("\n").strip("</p>").strip("<p>")
+                continue
+        if "data-fullname=" in line: 
+            splitLine = line.split("><")
+            fullPostText += splitLine[-1].strip("\n").strip("</p>").strip("<p>")
+            for item in splitLine:
+                if "data-fullname=" in item: 
+                    splitItem = item.split(" ")
+                    for nameVal in splitItem:
+                        if "data-fullname=" in nameVal: 
+                            idTag = nameVal.split("=")[1].strip("\"")
+                        if "data-author=" in nameVal: 
+                            authorTag = nameVal.split("=")[1].strip("\"")
+            inMultiLineComment = True 
+    options.outputFile.write(fullThreadText) 
+    options.outputFile.write("\n#\n") 
+    for item in postInfo: 
+        options.outputFile.write(item[0] + "\t" + item[1] + "\t" + item[2] + "\n")
+
+
+if __name__ == "__main__" : 
+    sys.exit(main(sys.argv))
